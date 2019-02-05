@@ -1,2 +1,2 @@
-# Data-Structures
-A repository that represents the applications of some data structures.
+# Minimum-Heap
+An implementaion of minimum heap, where the parent is less or same as the child.
