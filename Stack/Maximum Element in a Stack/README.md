@@ -1,2 +1,3 @@
-# Data-Structures
-A repository that represents the applications of some data structures.
+# Stack-Maximum
+A simple program to get the maximum element of a stack when performing add and pop operations.
+
