@@ -1,2 +1,2 @@
-# Data-Structures
-A repository that represents the applications of some data structures.
+# HeapSort
+A heap sort algorithm implementation using maximum heap.
