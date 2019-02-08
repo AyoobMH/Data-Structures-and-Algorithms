@@ -1,2 +1,2 @@
-# Data-Structures
-A repository that represents the applications of some data structures.
+# Disjoint Sets
+A simple representaion of disjoint sets data structure.
