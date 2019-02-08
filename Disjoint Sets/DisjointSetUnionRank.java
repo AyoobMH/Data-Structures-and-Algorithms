@@ -1,3 +1,10 @@
+/*
+This is an implementation of disjoint sets data structure. The following code was implemented based on an online course from coursera
+-Data Structures and Algorithms- 
+The code represents the -Union by Rank- method
+*/
+
+
 import java.io.*;
 import java.util.*;
 
