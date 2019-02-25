@@ -8,7 +8,8 @@ An alogorithm that will traverse the tree in a specific method (in order, pre or
 # Task
 You are given a rooted binary tree. Build and output its in-order, pre-order and post-order traversals.
 
-# Input Format. The first line contains the number of vertices 𝑛. The vertices of the tree are numbered
+# Input Format
+The first line contains the number of vertices 𝑛. The vertices of the tree are numbered
 from 0 to 𝑛 − 1. Vertex 0 is the root.
 The next 𝑛 lines contain information about vertices 0, 1, ..., 𝑛−1 in order. Each of these lines contains
 three integers 𝑘𝑒𝑦𝑖, 𝑙𝑒𝑓𝑡𝑖 and 𝑟𝑖𝑔ℎ𝑡𝑖 — 𝑘𝑒𝑦𝑖 is the key of the 𝑖-th vertex, 𝑙𝑒𝑓𝑡𝑖 is the index of the left
