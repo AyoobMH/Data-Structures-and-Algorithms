@@ -1,9 +1,9 @@
 # Data-Structures
 A repository that represents the applications of some data structures.
 
-1- Stack_
-2- Queue_
-3- Hash Table_
-4- Diskoint Sets_
-5- Heap_
-6- Binray Tree_
+1- Stack</br>
+2- Queue</br>
+3- Hash Table</br>
+4- Diskoint Sets</br>
+5- Heap</br>
+6- Binray Tree</br>
