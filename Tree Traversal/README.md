@@ -3,8 +3,6 @@ An alogorithm that will traverse the tree in a specific method (in order, pre or
 
 # NOTE: The following algorithm works only on a specific input format......See below
 
-# Problem Description
-
 # Task
 You are given a rooted binary tree. Build and output its in-order, pre-order and post-order traversals.
 
