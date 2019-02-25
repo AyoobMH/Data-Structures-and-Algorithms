@@ -11,7 +11,8 @@ elements 𝑎𝑖 and 𝑎𝑗 of the array 𝑎 for some 𝑖 and 𝑗. You wil
 using only 𝑂(𝑛) swaps, as was described in the lectures. Note that you will need to use a min-heap
 instead of a max-heap in this problem.
 
-# Input Format. The first line of the input contains single integer 𝑛. The next line contains 𝑛 space-separated
+# Input Format
+The first line of the input contains single integer 𝑛. The next line contains 𝑛 space-separated
 integers 𝑎𝑖.
 
 # Constraints
