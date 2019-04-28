@@ -9,6 +9,7 @@ an undirected edge if they are adjacent and there is no wall between them. Then,
 to check whether there is a path between two given cells in the maze, it suffices to
 check that there is a path between the corresponding two vertices in the graph.
 <hr>
+
 # Task
 Given an undirected graph and two distinct vertices 𝑢 and 𝑣, check if there is a path between 𝑢 and 𝑣.
 
