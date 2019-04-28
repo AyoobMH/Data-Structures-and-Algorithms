@@ -26,7 +26,7 @@ Output the number of connected components.
   Output:<br>
   2<br>
   
-![alt text](img.jpg = 300x300)
+![alt text](img.jpg | width=300)
  
  <strong>Explanation:</strong><br>
  There are two connected components here: {1, 2, 3} and {4}.
