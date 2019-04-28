@@ -25,8 +25,8 @@ Output the number of connected components.
   3 2<br>
   Output:<br>
   2
-![alt text](img.png)
+![alt text](img.jpg)
  
- <strong>Explanation:<strong><br>
+ <strong>Explanation:</strong><br>
  There are two connected components here: {1, 2, 3} and {4}.
   
