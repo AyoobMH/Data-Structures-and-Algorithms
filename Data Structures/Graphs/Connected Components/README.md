@@ -16,3 +16,5 @@ A graph is given in the standard format.
 
 # Output Format
 Output the number of connected components.
+
+![alt text](https://www.geeksforgeeks.org/wp-content/uploads/gq/2015/06/SCCUndirected.png)
