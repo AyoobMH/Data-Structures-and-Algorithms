@@ -18,13 +18,15 @@ A graph is given in the standard format.
 Output the number of connected components.
 <hr>
 
-# Sample 1.
-  Input:
-  4 2
-  1 2
-  3 2
-  Output:
+# Sample 1
+  Input:<br>
+  4 2<br>
+  1 2<br>
+  3 2<br>
+  Output:<br>
   2
+![alt text](img.png)
  
- <strong>Explanation:<strong>
+ <strong>Explanation:<strong><br>
+ There are two connected components here: {1, 2, 3} and {4}.
   
