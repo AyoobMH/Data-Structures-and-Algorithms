@@ -24,7 +24,8 @@ Output the number of connected components.
   1 2<br>
   3 2<br>
   Output:<br>
-  2
+  2<br>
+  
 ![alt text](img.jpg)
  
  <strong>Explanation:</strong><br>
