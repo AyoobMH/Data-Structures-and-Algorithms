@@ -27,5 +27,5 @@ Input:<br>
 Output:<br>
 4 3 1 2<br>
   
-<img src="img.jpg" width="600" height="300">
+<img src="img.jpg" width="700" height="250">
 
