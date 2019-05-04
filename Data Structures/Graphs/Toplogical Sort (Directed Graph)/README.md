@@ -1,24 +1,31 @@
 # Problem Introduction
-A maze is a rectangular grid of cells with walls between some of adjacent cells.
-You would like to check whether there is a path from a given cell to a given
-exit from a maze where an exit is also a cell that lies on the border of the maze
-(in the example shown to the right there are two exits: one on the left border
-and one on the right border). For this, you represent the maze as an undirected
-graph: vertices of the graph are cells of the maze, two vertices are connected by
-an undirected edge if they are adjacent and there is no wall between them. Then,
-to check whether there is a path between two given cells in the maze, it suffices to
-check that there is a path between the corresponding two vertices in the graph.
+Now, when you are sure that there are no cyclic dependencies in the given CS curriculum, you would like to
+find an order of all courses that is consistent with all dependencies. For this, you find a topological ordering
+of the corresponding directed graph.
 <hr>
 
 # Task
-Given an undirected graph and two distinct vertices 𝑢 and 𝑣, check if there is a path between 𝑢 and 𝑣.
+Compute a topological ordering of a given directed acyclic graph (DAG) with 𝑛 vertices and 𝑚 edges.
 
 # Input Format
-An undirected graph with 𝑛 vertices and 𝑚 edges. The next line contains two vertices 𝑢
-and 𝑣 of the graph.
+A graph is given in the standard format.
 
 # Constraints
-2 ≤ 𝑛 ≤ 103; 1 ≤ 𝑚 ≤ 103; 1 ≤ 𝑢, 𝑣 ≤ 𝑛; 𝑢 ̸= 𝑣.
+1 ≤ 𝑛 ≤ 105, 0 ≤ 𝑚 ≤ 105. The given graph is guaranteed to be acyclic.
 
 # Output Format
-Output 1 if there is a path between 𝑢 and 𝑣 and 0 otherwise.
+Output any topological ordering of its vertices. (Many DAGs have more than just one
+topological ordering. You may output any of them.)
+<hr>
+
+# Sample 1
+Input:<br>
+4 3<br>
+1 2<br>
+4 1<br>
+3 1<br>
+Output:<br>
+4 3 1 2<br>
+  
+<img src="img.jpg" width="600" height="300">
+
