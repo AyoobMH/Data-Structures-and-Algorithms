@@ -32,4 +32,4 @@ Output 1 if the graph contains a cycle and 0 otherwise.
 <img src="img.jpg" width="300" height="300">
  
  <strong>Explanation:</strong><br>
- There are two connected components here: {1, 2, 3} and {4}.
+This graph contains a cycle: 3 → 1 → 2 → 3.
