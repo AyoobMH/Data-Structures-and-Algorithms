@@ -30,4 +30,3 @@ Output the number of connected components.
  
  <strong>Explanation:</strong><br>
  There are two connected components here: {1, 2, 3} and {4}.
-  
