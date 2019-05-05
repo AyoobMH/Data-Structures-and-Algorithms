@@ -7,3 +7,4 @@ A repository that represents the applications of some data structures.
 4- Diskoint Sets</br>
 5- Heap</br>
 6- Binray Tree</br>
+7- Graphs<br>
