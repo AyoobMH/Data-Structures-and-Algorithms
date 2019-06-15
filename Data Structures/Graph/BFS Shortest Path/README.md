@@ -46,7 +46,7 @@ There is a unique shortest path between vertices 2 and 4 in this graph: 2 − 1 
   Output:<br>
   -1<br>
   
-<img src="example2.jpg" width="300" height="300">
+<img src="example2.jpg" width="400" height="300">
  
 <strong>Explanation:</strong><br>
 There is no path between vertices 3 and 5 in this graph.
