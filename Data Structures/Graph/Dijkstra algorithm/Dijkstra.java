@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Dijkstra {
+
     private static int distance(ArrayList<Integer>[] adj, int s, int t, int[][] weight) {
 
         int cost = dijkstra(adj, s, t, weight);
@@ -9,6 +10,7 @@ public class Dijkstra {
     }
 
     private static int minimumVertex(int[] vertecies, boolean[] visited){
+
         int minmum = Integer.MAX_VALUE;
         int index = -1;
         for(int i=1; i<vertecies.length; i++){
@@ -24,7 +26,6 @@ public class Dijkstra {
 
     private static int dijkstra(ArrayList<Integer>[] adj, int s, int t, int[][] weight){
 
-        int[] vertices = new int[adj.length];
         int[] cost = new int[adj.length];
         boolean[] visited = new boolean[adj.length];
         boolean[] alreadyInQueue = new boolean[adj.length];
@@ -54,14 +55,12 @@ public class Dijkstra {
 
                     if(checkCost < cost[neighborNode]){
                         cost[neighborNode] = checkCost;
-//                        vertices[neighborNode] = checkCost;
                     }
                 }
             }
             node = minimumVertex(cost,visited);
-//            System.out.println("Node " + node + " : " + Arrays.toString(cost));
         }
-//        System.out.println(Arrays.toString(cost));
+
         return cost[t];
     }
 
@@ -87,14 +86,9 @@ public class Dijkstra {
         }
         int x = scanner.nextInt();
         int y = scanner.nextInt();
-//        for(int i=1; i<adj.length; i++){
-//            System.out.println(i + " " + adj[i]);
-//        }
+
         System.out.println(distance(adj, x, y, weight));
-
     }
-
-
 
 }
 
