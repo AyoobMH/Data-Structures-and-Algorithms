@@ -27,11 +27,11 @@ class DisjointUnionSets{
 	}
 
 	int find(int i){
-        while(parent[i] != i){
-            i = parent[i];
+		while(parent[i] != i){
+			i = parent[i];
 
-        }
-        return i;
+		}
+		return i;
 	}
 
 	void union(int source, int destination){
@@ -65,19 +65,19 @@ class DisjointUnionSets{
 
 	void printParent(){
 		System.out.print("Parent : ");
-	    for(int i : parent){
-	        System.out.print(i + " ");
-	    }
-	    System.out.println();
+		for(int i : parent){
+			System.out.print(i + " ");
+		}
+		System.out.println();
 	}
 
 	void printRank(){
 		System.out.print("Rank   : ");
-	    for(int i : rank){
-	        System.out.print(i + " ");
-	    }
-	    System.out.println();
-	    System.out.println("--------------------");
+		for(int i : rank){
+			System.out.print(i + " ");
+		}
+		System.out.println();
+		System.out.println("--------------------");
 
 	}
 }
@@ -91,9 +91,9 @@ public class DisjointSetUnionRank
 		int n = 7;
 		DisjointUnionSets dus = new DisjointUnionSets(n);
 
-        dus.printChild();
-        dus.printParent();
-        dus.printRank();
+		dus.printChild();
+		dus.printParent();
+		dus.printRank();
 
 
         /*
@@ -127,5 +127,5 @@ public class DisjointSetUnionRank
 
 
 
-	}
+    }
 }
