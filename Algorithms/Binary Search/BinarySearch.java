@@ -1,64 +1,19 @@
-import java.util.*;
+/*
+1. index values min = 0, max = array.length - 1
+2. start a while loop.. while(max>=min).. when max < min
+   it means your targetNumber is not in the list....
+3. if guess == target number end and return the index
+4. if not, if guess < target numbers
+   then, minIndex = guess +1
+5. otherwise, maxIndex = guess -1
+*/
+
 import java.io.*;
-// WORKS perfectly......
+import java.util.*;
+
 public class BinarySearch {
 
-	public static void main(String[] args) throws IOException{
-		//1. index values min = 0, max = array.length - 1
-        //2. start a while loop.. while(max>=min).. when max < min
-        //   it means your targetNumber is not in the list....
-        //3. if guess == target number end and return the index
-        //4. if not, if guess < target numbers
-        //   then, minIndex = guess +1
-        //5. otherwise, maxIndex = guess -1
-
-
-        long[] arrayToSearch = numbers();
-        long[] targetNumbers = targetNumbers();
-        long result = 0L;
-        for(int i=0; i<targetNumbers.length; i++){
-            result = (binarySearch(arrayToSearch, targetNumbers[i]));
-            System.out.print(result + " ");
-        }
-	}
-
-
-	// make reader static to read the whole input...
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-	// read the input of nuumbers to search it....
-	public static long[] numbers() throws IOException{
-
-	    StringTokenizer str = new StringTokenizer(br.readLine());
-	    int arrayLength = Integer.parseInt(str.nextToken());
-	    long[] numbers = new long[arrayLength];
-	    int i=0;
-	    while(str.hasMoreTokens()){
-	        long number = Long.parseLong(str.nextToken());
-	        numbers[i] = number;
-	        i++;
-	    }
-	    return numbers;
-	}
-
-	// read the input numbers to be searched....
-	public static long[] targetNumbers() throws IOException{
-
-	    //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	    StringTokenizer str = new StringTokenizer(br.readLine());
-	    int arrayLength = Integer.parseInt(str.nextToken());
-	    long[] targetNumbers = new long[arrayLength];
-	    int i=0;
-	    while(str.hasMoreTokens()){
-	        long number = Long.parseLong(str.nextToken());
-	        targetNumbers[i] = number;
-	        i++;
-	    }
-	    return targetNumbers;
-	}
-
-	// search
-    public static long binarySearch(long[] arrayToSearch, long number) throws IOException{
+	static int binarySearch(int[] arrayToSearch, int number) {
 
         int minIndex=0, maxIndex = arrayToSearch.length-1;
         long targetNumber=number;
@@ -81,7 +36,57 @@ public class BinarySearch {
         }
         return -1;
         // in case number is not found in the array...
-    }
+	}
 
+	static int linearSearch(int[] a, int x) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == x) return i;
+		}
+		return -1;
+	}
 
+	public static void main(String[] args) {
+		FastScanner scanner = new FastScanner(System.in);
+		int n = scanner.nextInt();
+		int[] a = new int[n];
+		for (int i = 0; i < n; i++) {
+			a[i] = scanner.nextInt();
+		}
+		int m = scanner.nextInt();
+		int[] b = new int[m];
+		for (int i = 0; i < m; i++) {
+			b[i] = scanner.nextInt();
+		}
+		for (int i = 0; i < m; i++) {
+			//replace with the call to binarySearch when implemented
+			System.out.print(binarySearch(a, b[i]) + " ");
+		}
+	}
+	static class FastScanner {
+		BufferedReader br;
+		StringTokenizer st;
+
+		FastScanner(InputStream stream) {
+			try {
+				br = new BufferedReader(new InputStreamReader(stream));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		String next() {
+			while (st == null || !st.hasMoreTokens()) {
+				try {
+					st = new StringTokenizer(br.readLine());
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			return st.nextToken();
+		}
+
+		int nextInt() {
+			return Integer.parseInt(next());
+		}
+	}
 }
