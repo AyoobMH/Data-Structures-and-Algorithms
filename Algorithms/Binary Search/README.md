@@ -18,12 +18,12 @@ For all 𝑖 from 0 to 𝑘 − 1, output an index 0 ≤ 𝑗 ≤ 𝑛 − 1 suc
 is no such index.
 
 # Sample 1
-Input:
+Input:<br>
   5 1 5 8 12 13<br>
   5 8 1 23 1 11<br>
-Output:
+Output:<br>
   2 0 -1 0 -1<br>
-<strong>Explanation</strong>
+<strong>Explanation</strong><br>
 In this sample, we are given an increasing sequence 𝑎0 = 1, 𝑎1 = 5, 𝑎2 = 8, 𝑎3 = 12, 𝑎4 = 13 of length
 five and five keys to search: 8, 1, 23, 1, 11. We see that 𝑎2 = 8 and 𝑎0 = 1, but the keys 23 and 11 do
 not appear in the sequence 𝑎. For this reason, we output a sequence 2, 0,−1, 0,−1.
