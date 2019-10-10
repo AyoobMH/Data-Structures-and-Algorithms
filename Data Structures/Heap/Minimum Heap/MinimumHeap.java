@@ -1,5 +1,5 @@
 /*
-In order to make a heap sort algorithm you need perform two main actions:
+In order to make a heap sort algorithm you need to perform two main actions:
 1- create a heap.
 2- start extracting the maximum elements and reconstruct the heap.
 
